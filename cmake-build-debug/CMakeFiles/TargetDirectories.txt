@@ -1,0 +1,4 @@
+/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/CMakeFiles/Learn-OpenGL.dir
+/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/CMakeFiles/Learn-OpenGL_autogen.dir

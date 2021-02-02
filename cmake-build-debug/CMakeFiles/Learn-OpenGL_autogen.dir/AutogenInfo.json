@@ -1,0 +1,161 @@
+{
+	"BUILD_DIR" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/Learn-OpenGL_autogen",
+	"CMAKE_BINARY_DIR" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/fordchen/Qt_learn/Learn-OpenGL",
+	"CMAKE_EXECUTABLE" : "/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/Users/fordchen/Qt_learn/Learn-OpenGL",
+	"HEADERS" : 
+	[
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/Render/TextureBuffer.h",
+			"MU",
+			"Q6Y7IZYM6X/moc_TextureBuffer.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/Render/render.h",
+			"MU",
+			"Q6Y7IZYM6X/moc_render.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/Render/renderthread.h",
+			"MU",
+			"Q6Y7IZYM6X/moc_renderthread.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/Util/FpsTimer.h",
+			"MU",
+			"ENRGVLQ2BA/moc_FpsTimer.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/Util/ThreadHelper.h",
+			"MU",
+			"ENRGVLQ2BA/moc_ThreadHelper.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/glwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_glwidget.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/mainwindow.h",
+			"MU",
+			"EWIEGA46WW/moc_mainwindow.cpp"
+		],
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/mydialog.h",
+			"MU",
+			"EWIEGA46WW/moc_mydialog.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/Learn-OpenGL_autogen/include",
+	"MOC_COMPILATION_FILE" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/Learn-OpenGL_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"QT_CONCURRENT_LIB",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_MULTIMEDIA_LIB",
+		"QT_NETWORK_LIB",
+		"QT_OPENGL_LIB",
+		"QT_POSITIONING_LIB",
+		"QT_QML_LIB",
+		"QT_QUICKCONTROLS2_LIB",
+		"QT_QUICK_LIB",
+		"QT_SVG_LIB",
+		"QT_WEBCHANNEL_LIB",
+		"QT_WEBENGINECORE_LIB",
+		"QT_WEBENGINE_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/include",
+		"/Users/fordchen/Qt_learn/Learn-OpenGL/vendor/LightRenderer/third_party/Ace3DEngine/include",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtCore.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/mkspecs/macx-clang",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWidgets.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtGui.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtGui.framework/Headers",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtOpenGL.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtOpenGL.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtQml.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtQml.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtNetwork.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtNetwork.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtQuick.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtQuick.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtQuickControls2.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtQuickControls2.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtMultimedia.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtMultimedia.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWebEngine.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWebEngine.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWebEngineCore.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWebEngineCore.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWebChannel.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtWebChannel.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtPositioning.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtPositioning.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtSvg.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtSvg.framework/Headers",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtConcurrent.framework",
+		"/Users/fordchen/Qt5.13.0/5.13.0/clang_64/lib/QtConcurrent.framework/Headers",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/12.0.0/include",
+		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.1.sdk/usr/include",
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : true,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/Applications/CLion.app/Contents/bin/cmake/mac/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/Learn-OpenGL_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/CMakeFiles/Learn-OpenGL_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/Users/fordchen/Qt5.13.0/5.13.0/clang_64/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/Users/fordchen/Qt5.13.0/5.13.0/clang_64/bin/uic",
+	"QT_VERSION_MAJOR" : 5,
+	"SETTINGS_FILE" : "/Users/fordchen/Qt_learn/Learn-OpenGL/cmake-build-debug/CMakeFiles/Learn-OpenGL_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/Users/fordchen/Qt_learn/Learn-OpenGL/Render/TextureBuffer.cpp",
+			"MU"
+		],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/Render/render.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/Render/renderthread.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/Util/FpsTimer.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/Util/ThreadHelper.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/glwidget.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/main.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/mainwindow.cpp", "MU" ],
+		[ "/Users/fordchen/Qt_learn/Learn-OpenGL/mydialog.cpp", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}
