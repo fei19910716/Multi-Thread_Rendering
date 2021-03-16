@@ -37,6 +37,8 @@ private:
 
     GLuint m_textureID;
     GLuint m_vao;
+    int texture_w;
+    int texture_h;
 
 };
 

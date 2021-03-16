@@ -38,7 +38,7 @@ void TextureBuffer::updateTexture(QOpenGLContext *context, int width, int height
 void TextureBuffer::updateTexture(QOpenGLContext *context, int textureID) {
 
     QMutexLocker locker(&m_mutex);
-    qDebug()<<"the texture id :"<<textureID;
+    //qDebug()<<"the texture id :"<<textureID;
     m_texture=textureID;
 }
 

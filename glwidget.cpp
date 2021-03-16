@@ -91,7 +91,7 @@ void GLWidget::initializeGL()
     glEnableVertexAttribArray(2);
 
     //genTextureFromImage("/Users/fordchen/Desktop/test_opengl/light.png");
-    //genTextureFromStb_image("/Users/fordchen/Desktop/test_opengl/light.png");
+    genTextureFromStb_image("/Users/xxx/Desktop/111.png");
 
     glBindVertexArray(0);
 
@@ -113,22 +113,31 @@ void GLWidget::paintGL()
     if(TextureBuffer::instance()->isMReady())
         TextureBuffer::instance()->drawTexture(this->context(), 6);
 
-//    unsigned char * data = new unsigned char[width()*height()*4];
-//    glBindTexture(GL_TEXTURE_2D,m_textureID);
-//    //glGetTexImage(GL_TEXTURE_2D,0,GL_RGBA,GL_UNSIGNED_BYTE,data); // 将绑定纹理数据拷贝到data，TODO// 读取错误
-//    glReadPixels(0,0,width(),height(),GL_RGBA,GL_UNSIGNED_BYTE,data);
-//
-//    stbi_write_png("/Users/fordchen/Desktop/out.png",width(),height(),4,data,0);
+
+    // save the opengl result to image
+    unsigned char * data1 = new unsigned char[width()*height()*4];
+    // transfer the bind fbo image data, here is the opengl result data
+    glReadPixels(0,0,width(),height(),GL_RGBA,GL_UNSIGNED_BYTE,data1);
+
+    stbi_write_png("/Users/xxx/Desktop/out1.png",width(),height(),4,data1,0);
+
+
+    // save the texture to image, we should first bind it to a fbo
+    GLuint fbo;
+    glGenFramebuffers(1, &fbo);
+    glBindFramebuffer(GL_FRAMEBUFFER, fbo);
+    glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_textureID, 0);
+
+    unsigned char * data = new unsigned char[texture_w*texture_h*4];
+    // transfer the bind fbo image data, here is the texture data
+    glReadPixels(0, 0, texture_w, texture_h, GL_RGBA, GL_UNSIGNED_BYTE, data);
+    stbi_write_png("/Users/xxx/Desktop/out.png",texture_w,texture_h,4,data,0);
+    glBindFramebuffer(GL_FRAMEBUFFER, 0);
+    glDeleteFramebuffers(1, &fbo);
+
 
     glBindVertexArray(0);
     m_program->release();
-
-
-//    glActiveTexture(GL_TEXTURE0);
-//    //glDrawArrays(GL_TRIANGLES, 0, 6 /*sizeof(vertices) / sizeof(float) / 4*/);
-//    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-//    glBindVertexArray(0);
-
 
 }
 
@@ -176,6 +185,8 @@ void GLWidget::genTextureFromStb_image(const QString &path)
     unsigned char *data = stbi_load(path.toStdString().c_str(), &width, &height, &nrChannels, 0);
     if (data)
     {
+        texture_w = width;
+        texture_h = height;
         glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
         glGenerateMipmap(GL_TEXTURE_2D);
     }

@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(Learn-OpenGL)
+project(Multi-Thread_Rendering)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -42,6 +42,6 @@ file(GLOB SOURCE_FILES *.cpp *.h *.hpp *.c)
 file(GLOB UTIL_FILES Util/*.cpp Util/*.h Util/*.hpp Util/*.c)
 file(GLOB RENDER_FILES Render/*.cpp Render/*.h Render/*.hpp Render/*.c)
 
-add_executable(Learn-OpenGL ${SOURCE_FILES} ${UTIL_FILES} ${RENDER_FILES})
-target_link_libraries(Learn-OpenGL Qt5::Widgets Qt5::OpenGL Qt5::Core Qt5::Gui Qt5::Qml  Qt5::Quick Qt5::QuickControls2 Qt5::Multimedia Qt5::WebEngine Qt5::Svg Qt5::Concurrent ${libs})
-qt5_use_modules(Learn-OpenGL Core Widgets Gui OpenGL Qml Quick QuickControls2)
+add_executable(Multi-Thread_Rendering ${SOURCE_FILES} ${UTIL_FILES} ${RENDER_FILES})
+target_link_libraries(Multi-Thread_Rendering Qt5::Widgets Qt5::OpenGL Qt5::Core Qt5::Gui Qt5::Qml  Qt5::Quick Qt5::QuickControls2 Qt5::Multimedia Qt5::WebEngine Qt5::Svg Qt5::Concurrent ${libs})
+qt5_use_modules(Multi-Thread_Rendering Core Widgets Gui OpenGL Qml Quick QuickControls2)
