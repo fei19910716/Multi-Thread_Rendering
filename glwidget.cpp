@@ -91,7 +91,7 @@ void GLWidget::initializeGL()
     glEnableVertexAttribArray(2);
 
     //genTextureFromImage("/Users/fordchen/Desktop/test_opengl/light.png");
-    genTextureFromStb_image("/Users/xxx/Desktop/111.png");
+    genTextureFromStb_image("/Users/fordchen/Desktop/111.png");
 
     glBindVertexArray(0);
 
@@ -118,8 +118,7 @@ void GLWidget::paintGL()
     unsigned char * data1 = new unsigned char[width()*height()*4];
     // transfer the bind fbo image data, here is the opengl result data
     glReadPixels(0,0,width(),height(),GL_RGBA,GL_UNSIGNED_BYTE,data1);
-
-    stbi_write_png("/Users/xxx/Desktop/out1.png",width(),height(),4,data1,0);
+    stbi_write_png("/Users/fordchen/Desktop/out1.png",width(),height(),4,data1,0);
 
 
     // save the texture to image, we should first bind it to a fbo
@@ -127,13 +126,18 @@ void GLWidget::paintGL()
     glGenFramebuffers(1, &fbo);
     glBindFramebuffer(GL_FRAMEBUFFER, fbo);
     glFramebufferTexture2D(GL_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, GL_TEXTURE_2D, m_textureID, 0);
-
     unsigned char * data = new unsigned char[texture_w*texture_h*4];
     // transfer the bind fbo image data, here is the texture data
     glReadPixels(0, 0, texture_w, texture_h, GL_RGBA, GL_UNSIGNED_BYTE, data);
     stbi_write_png("/Users/xxx/Desktop/out.png",texture_w,texture_h,4,data,0);
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
     glDeleteFramebuffers(1, &fbo);
+
+    // save the texture to image, the second method, just use glGetTexImage()
+    unsigned char * data2 = new unsigned char[texture_w*texture_h*4];
+    glBindTexture(GL_TEXTURE_2D, m_textureID);
+    glGetTexImage(GL_TEXTURE_2D,0,GL_RGBA,GL_UNSIGNED_BYTE,data2);
+    stbi_write_png("/Users/fordchen/Desktop/out2.png",texture_w,texture_h,4,data2,0);
 
 
     glBindVertexArray(0);
